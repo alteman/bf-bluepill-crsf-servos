@@ -1,3 +1,10 @@
+## CRSF to servo bridge using STM32 Blue Pill board (Betaflight fork)
+
+This turned out to be the fastest way to build a CRSF decoder to use ExpressLRS receivers with fixed wing planes without flight controllers.
+Betaflight already supports F1 (well, it did, anyway), CRSF protocol and servo outputs, and the code is battle tested.
+
+See also: https://github.com/CapnBry/CRServoF (but that one is Arduino based, and apparently arduino pwm implementation on stm32 can't properly support 4 PWM channels at the same time, at least on the Blue Pill board). Also, it doesn't support a beeper or mixers or a configurator..you get the idea :)
+
 ![BetaFlight Notice, version 3.2 will be the last version of Betaflight to support STM32F1 based flight controllers, this includes NAZE, CC3D (original) and CJMCU like flight controllers](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf3_2_notice.png)
 
 ![BetaFlight](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png)
